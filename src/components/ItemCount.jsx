@@ -33,15 +33,15 @@ export default function ItemCount({ product }) {
     },[cart]);
     return (
     <div>
-        <span onClick={sum}>+</span>
+        <span style={{ cursor: "pointer"}} onClick={sum}>+</span>
         {count}
-        <span onClick={res}>-</span>
+        <span style={{ cursor: "pointer"}} onClick={res}>-</span>
         <br />
         {removeButton ? ( 
             <> 
                 Producto agregado... 
-                <Link to="/">Seguir comprando...</Link>
-                <Link to="/checkout">Terminar Compra</Link>
+                <Link to="/" type="button" className="btn btn-secondary">Seguir comprando...</Link>
+                <Link to="/checkout" type="button" className="btn btn-secondary">Terminar Compra</Link>
             </>
             ) : (
             

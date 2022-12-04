@@ -37,7 +37,7 @@ export default function CheckOut() {
       <input type="text" placeholder='nombre' onChange={(e)=>setName(e.target.value)}/> <br />
       <input type="tel" placeholder='telefono' onChange={(e)=>setTel(e.target.value)}/> <br />
       <input type="email" placeholder='email' onChange={(e)=>setEmail(e.target.value)}/> <br /> <br />
-      <button onClick={validateForm}>Finalizar compra</button>
+      <button onClick={validateForm} type="button" className="btn btn-secondary">Finalizar compra</button>
     </div>
     }
     </>
